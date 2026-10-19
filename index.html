@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Насколько хорошо ты меня знаешь?</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="app" id="app">
+  <section id="welcome" class="screen">
+    <div class="emoji">🎉🧠✨</div>
+    <p class="eyebrow">мини-викторина для друзей</p>
+    <h1>Насколько хорошо ты меня знаешь?</h1>
+    <p class="result-copy">Проверь, насколько хорошо ты знаешь меня!<br>Всего 5 вопросов — готов(а)?</p>
+    <button class="start" id="startBtn">Поехали! 🚀</button>
+    <p class="small">Выбирай один ответ в каждом вопросе</p>
+  </section>
+
+  <section id="quiz" hidden>
+    <div class="top">
+      <span class="pill" id="questionCount">Вопрос 1 из 5</span>
+      <span class="pill">⭐ Счёт: <span id="score">0</span></span>
+    </div>
+    <div class="progress"><div class="progress-fill" id="progressFill"></div></div>
+    <p class="eyebrow">Выбери правильный ответ</p>
+    <h2 class="question" id="questionText"></h2>
+    <div class="answers" id="answers"></div>
+    <div class="feedback" id="feedback" role="status" aria-live="polite"></div>
+    <button class="next" id="nextBtn" hidden>Следующий вопрос →</button>
+  </section>
+
+  <section id="result" class="screen" hidden>
+    <div class="emoji" id="resultEmoji">🏆</div>
+    <p class="eyebrow">викторина завершена!</p>
+    <h1>Твой результат</h1>
+    <div class="result-score" id="finalScore">0 из 5</div>
+    <p class="result-copy" id="resultCopy"></p>
+    <button class="start" id="restartBtn">Сыграть ещё раз 🔄</button>
+    <p class="small">Можешь отправить викторину друзьям и сравнить результаты!</p>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
